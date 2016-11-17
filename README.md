@@ -3,12 +3,9 @@
 Content for creating ABAS branded demo sites, such as:
 
 - http://abasystems.github.io/react-object-table/
-- http://abasystems.github.io/react-interactive-tutorials/
 
 The demo site framework contains all the styles, a base template to use with Jekyll, and some
 common Javascript widgets.
-
-- Source code previewer
 
 ## Installation
 
