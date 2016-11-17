@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'react-object-table.js',
-    library: 'react-object-table',
+    filename: 'abas-demo-site.js',
+    library: 'abas-demo-site',
     libraryTarget: 'umd',
   },
   module: {
