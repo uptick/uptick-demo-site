@@ -69,7 +69,7 @@ package_github_url: https://github.com/ABASystems/cool-package
 package_npm_url: https://www.npmjs.com/package/cool-package
 ```
 
-### Source code previewer
+### Source Code Previewer
 
 To implement a source code previewer, use the following HTML mount:
 
