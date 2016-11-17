@@ -2,11 +2,11 @@
 
 Content for creating ABAS branded demo sites, such as:
 
-- [http://abasystems.github.io/react-object-table/]
-- [http://abasystems.github.io/react-interactive-tutorials/]
+- http://abasystems.github.io/react-object-table/
+- http://abasystems.github.io/react-interactive-tutorials/
 
-The demo site framework contains all the styles, a base template to use with Jekyll, and the
-following javascript components:
+The demo site framework contains all the styles, a base template to use with Jekyll, and some
+common Javascript widgets.
 
 - Source code previewer
 
@@ -44,10 +44,12 @@ init();
 
 ### Base Template
 
-To use the base template, you will need to replace the default Jekyll _layouts directory with the
-dist folder of this package:
+To use the base template, you will need to replace the default Jekyll _layouts directory in your
+config with the dist folder of this package:
 
 ```yml
+_config.yml
+
 layouts_dir: 'node_modules/abas-demo-site/dist'
 ```
 
@@ -57,6 +59,18 @@ The base layout depends on the following templates existing in your Jekyll _incl
 - required_static.html
 
 ## Usage
+
+### Base Template Customisation
+
+A number of variables are used to customise the base template, which are set in your Jekyll config:
+
+```yml
+_config.yml
+
+package_name: Cool Package
+package_github_url: https://github.com/ABASystems/cool-package
+package_npm_url: https://www.npmjs.com/package/cool-package
+```
 
 ### Source code previewer
 
