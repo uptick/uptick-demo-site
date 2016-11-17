@@ -11,6 +11,7 @@ function init() {
     jQuery.ajax({
       url: source,
       type: 'GET',
+      dataType: 'text',
       success: function(response) {
         jqElement.text(response);
       },
