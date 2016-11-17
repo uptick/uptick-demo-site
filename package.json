@@ -6,12 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "./node_modules/node-sass/bin/node-sass src/main.sass dist/abas-demo-site.css",
-    "watch-css": "npm run build-css; ./node_modules/node-sass/bin/node-sass src/main.sass dist/abas-demo-site.css --watch",
     "build-js": "./node_modules/webpack/bin/webpack.js",
-    "watch-js": "./node_modules/webpack/bin/webpack.js --watch",
     "build-html": "cp src/base.html dist/base.html",
     "build": "npm run build-js; npm run build-css; npm run build-html",
-    "watch": "parallel --ungroup ::: \"npm run watch-js\" \"npm run watch-css\"",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -44,6 +41,7 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
     "node-sass": "^3.12.1",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-node-externals": "^1.5.4"
   }
 }

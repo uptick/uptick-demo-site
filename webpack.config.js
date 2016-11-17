@@ -1,10 +1,13 @@
 var path = require('path');
+var NodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'abas-demo-site.js',
+    filename: 'react-object-table.js',
+    library: 'react-object-table',
+    libraryTarget: 'umd',
   },
   module: {
     loaders: [
@@ -17,7 +20,7 @@ module.exports = {
             'react',
             'es2015',
             'stage-0',
-          ]
+          ],
         },
       }
     ],
@@ -29,6 +32,7 @@ module.exports = {
       '',
       '.js',
       '.jsx',
-    ]
-  }
+    ],
+  },
+  externals: NodeExternals(),
 };
