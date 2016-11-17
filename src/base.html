@@ -2,10 +2,12 @@
 <html lang="en">
   <head>
     <title>{{ site.package_name }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    {% include head.html %}
   </head>
   <body>
     <div class="header">
-      <div class="container-fluid" style="max-width: 900px;">
+      <div class="content-container">
         <a class="title" href="{{ site.baseurl }}/">{{ site.package_name }}</a>
         <span style="margin-left: 20px;">
           <a href="{{ site.package_github_url }}">GitHub</a>
@@ -17,10 +19,11 @@
 
     <div class="content">
       {{ content }}
+      {% include required_static.html %}
     </div>
 
     <div class="footer">
-      <div class="container-fluid" style="max-width: 900px;">
+      <div class="content-container">
         <a href="http://www.aba-systems.com.au/" class="pull-right">
           <img
             class="pull-right"
