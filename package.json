@@ -1,11 +1,11 @@
 {
-  "name": "abas-demo-site",
+  "name": "uptick-demo-site",
   "version": "1.0.6",
-  "description": "Content for creating ABAS branded demo sites",
+  "description": "Content for creating Uptick-branded demo sites",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "./node_modules/node-sass/bin/node-sass src/main.sass dist/abas-demo-site.css",
+    "build-css": "./node_modules/node-sass/bin/node-sass src/main.sass dist/uptick-demo-site.css",
     "build-js": "./node_modules/webpack/bin/webpack.js",
     "build-html": "cp src/base.html dist/base.html",
     "build": "npm run build-js; npm run build-css; npm run build-html",
@@ -13,23 +13,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ABASystems/abas-demo-site.git"
+    "url": "git+https://github.com/uptick/uptick-demo-site.git"
   },
   "keywords": [
-    "abas",
-    "abasystems",
+    "uptick",
     "demo",
     "demonstration",
     "npm",
     "package",
     "example"
   ],
-  "author": "ABA Systems Pty Ltd",
+  "author": "Uptick Pty Ltd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ABASystems/abas-demo-site/issues"
+    "url": "https://github.com/uptick/uptick-demo-site/issues"
   },
-  "homepage": "https://github.com/ABASystems/abas-demo-site#readme",
+  "homepage": "https://github.com/uptick/uptick-demo-site#readme",
   "dependencies": {
     "jquery": "^3.1.1"
   },

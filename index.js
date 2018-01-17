@@ -1,1 +1,1 @@
-module.exports = require('./dist/abas-demo-site');
+module.exports = require('./dist/uptick-demo-site');

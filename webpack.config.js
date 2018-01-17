@@ -5,8 +5,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'abas-demo-site.js',
-    library: 'abas-demo-site',
+    filename: 'uptick-demo-site.js',
+    library: 'uptick-demo-site',
     libraryTarget: 'umd',
   },
   module: {

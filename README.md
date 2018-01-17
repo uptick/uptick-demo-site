@@ -1,8 +1,8 @@
-# abas-demo-site
+# uptick-demo-site
 
-Content for creating ABAS branded demo sites, such as:
+Content for creating Uptick-branded demo sites, such as:
 
-- http://abasystems.github.io/react-object-table/
+- http://uptick.github.io/react-object-table/
 
 The demo site framework contains all the styles, a base template to use with Jekyll, and some
 common Javascript widgets.
@@ -12,7 +12,7 @@ common Javascript widgets.
 Download the package:
 
 ```
-npm install abas-demo-site
+npm install uptick-demo-site
 ```
 
 ### Styles
@@ -20,13 +20,13 @@ npm install abas-demo-site
 Either import the styles in your preprocessed stylesheet:
 
 ```scss
-@import "node_modules/abas-demo-site/dist/abas-demo-site";
+@import "node_modules/uptick-demo-site/dist/uptick-demo-site";
 ```
 
 Or host and include the built css directly:
 
 ```html
-<link href="/node_modules/abas-demo-site/dist/abas-demo-site.css" rel="stylesheet">
+<link href="/node_modules/uptick-demo-site/dist/uptick-demo-site.css" rel="stylesheet">
 ```
 
 ### Widgets
@@ -34,7 +34,7 @@ Or host and include the built css directly:
 Initialise the demo site components
 
 ```javascript
-import { init } from 'abas-demo-site'
+import { init } from 'uptick-demo-site'
 
 init();
 ```
@@ -47,7 +47,7 @@ config with the dist folder of this package:
 ```yml
 _config.yml
 
-layouts_dir: 'node_modules/abas-demo-site/dist'
+layouts_dir: 'node_modules/uptick-demo-site/dist'
 ```
 
 The base layout depends on the following templates existing in your Jekyll _includes folder:
@@ -65,7 +65,7 @@ A number of variables are used to customise the base template, which are set in 
 _config.yml
 
 package_name: Cool Package
-package_github_url: https://github.com/ABASystems/cool-package
+package_github_url: https://github.com/uptick/cool-package
 package_npm_url: https://www.npmjs.com/package/cool-package
 ```
 
