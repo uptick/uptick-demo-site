@@ -1,9 +1,13 @@
-$theme-colour: #425363
+$theme-colour-bg-header: #00ADEF
+$theme-colour-text: #425363
+$theme-colour-text-code: #000
+$theme-colour-bg-dark: #425363
+$theme-colour-bg-light: #C6EAFB
 
 // base styles
 
 body
-  background: $theme-colour
+  background: $theme-colour-bg-dark
   font-size: 1.2rem
   line-height: 1.8rem
   padding: 0
@@ -20,10 +24,10 @@ h1, h2, h3
 h4, h5, h6
   margin-top: 3rem
 a
-  color: $theme-colour
+  color: $theme-colour-text
   text-decoration: none
   &:hover
-    color: darken($theme-colour, 20%)
+    color: darken($theme-colour-text, 20%)
     text-decoration: none
 ul, ol
   li
@@ -32,11 +36,10 @@ code
   max-height: 25vh
   white-space: pre
   display: block
-  background: #eee
-  border: 0.1rem solid #ddd
+  background: $theme-colour-bg-light
   padding: 1rem
   overflow-y: auto
-  color: $theme-colour
+  color: $theme-colour-text-code
 
 // layout
 
@@ -46,7 +49,7 @@ div.content-container
 
 div.header
   padding: 2rem
-  background: #00ADEF
+  background: $theme-colour-bg-header
   color: #fff
   a
     color: #fff
@@ -60,7 +63,7 @@ div.content
 
 a.source-link
   display: block
-  color: $theme-colour
+  color: $theme-colour-text-code
   text-align: right
   text-transform: uppercase
   font-size: 0.8rem
