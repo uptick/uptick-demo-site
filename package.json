@@ -1,6 +1,6 @@
 {
   "name": "uptick-demo-site",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Content for creating Uptick-branded demo sites",
   "main": "index.js",
   "scripts": {
