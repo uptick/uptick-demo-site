@@ -1,5 +1,8 @@
 # uptick-demo-site
 
+[![npm version](https://badge.fury.io/js/uptick-demo-site.svg)](http://badge.fury.io/js/uptick-demo-site)
+![Downloads](http://img.shields.io/npm/dm/uptick-demo-site.svg?style=flat)
+
 Content for creating Uptick-branded demo sites, such as:
 
 - http://uptick.github.io/react-object-table/
