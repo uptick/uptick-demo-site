@@ -14,7 +14,7 @@ common Javascript widgets.
 
 Download the package:
 
-```
+```shell
 npm install uptick-demo-site
 ```
 
@@ -39,7 +39,7 @@ Initialise the demo site components
 ```javascript
 import { init } from 'uptick-demo-site'
 
-init();
+init()
 ```
 
 ### Base Template
@@ -57,6 +57,18 @@ The base layout depends on the following templates existing in your Jekyll _incl
 
 - head.html
 - required_static.html
+
+### Favicon
+
+Copy `favicon.png` from this project's source directory into your jekyll root folder. Then add to
+the `jekyll-seo-tag` plugin to your project:
+
+```yml
+_config.yml
+
+plugins:
+  - jekyll-seo-tag
+```
 
 ## Usage
 
