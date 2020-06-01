@@ -1,22 +1,17 @@
-import jQuery from 'jquery'
-
 function init() {
-  jQuery('code.script').each(function(index, element) {
-    var jqElement = jQuery(element);
-    var source = jqElement.data('source');
-    var sourceLink = jQuery('<a>View the source</a>');
-    sourceLink.attr('href', source);
-    sourceLink.addClass('source-link');
-    sourceLink.insertBefore(jqElement);
-    jQuery.ajax({
-      url: source,
-      type: 'GET',
-      dataType: 'text',
-      success: function(response) {
-        jqElement.text(response);
-      },
-    });
-  });
+  [...document.querySelectorAll('code.script')].map(element => {
+    const source = element.dataset.source
+    const sourceLink = document.createElement('a')
+    sourceLink.innerText = 'View the Source'
+    sourceLink.setAttribute('href', source)
+    sourceLink.classList.add('source-link')
+    element.parentElement.insertBefore(sourceLink, element)
+    fetch(source).then(response => {
+      return response.text()
+    }).then(text => {
+      element.innerText = text
+    })
+  })
 }
 
 export { init }
