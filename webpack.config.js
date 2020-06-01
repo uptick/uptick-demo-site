@@ -1,5 +1,5 @@
-var path = require('path');
-var NodeExternals = require('webpack-node-externals');
+var path = require('path')
+var NodeExternals = require('webpack-node-externals')
 
 module.exports = {
   entry: './src/index.js',
@@ -35,4 +35,4 @@ module.exports = {
     ],
   },
   externals: NodeExternals(),
-};
+}

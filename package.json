@@ -1,14 +1,14 @@
 {
   "name": "uptick-demo-site",
   "version": "1.1.5",
-  "description": "Content for creating Uptick-branded demo sites",
+  "description": "Content for creating Uptick branded demo sites",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "./node_modules/node-sass/bin/node-sass src/main.sass dist/uptick-demo-site.css",
-    "build-js": "./node_modules/webpack/bin/webpack.js",
-    "build-html": "cp src/base.html dist/base.html",
-    "build": "npm run build-js; npm run build-css; npm run build-html",
+    "build:css": "./node_modules/node-sass/bin/node-sass src/main.sass dist/uptick-demo-site.css",
+    "build:js": "./node_modules/webpack/bin/webpack.js",
+    "build:html": "cp src/base.html dist/base.html",
+    "build": "npm run build:js; npm run build:css; npm run build:html",
     "prepublish": "npm run build"
   },
   "repository": {
