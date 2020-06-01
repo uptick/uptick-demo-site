@@ -3,6 +3,10 @@
   "version": "1.1.6",
   "description": "Content for creating Uptick branded demo sites",
   "main": "index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "./node_modules/stylus/bin/stylus src/main.styl -o dist/uptick-demo-site.css --include-css",
