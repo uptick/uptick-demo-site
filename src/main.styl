@@ -2,6 +2,8 @@ theme-colour-bg-header = #fff
 theme-colour-text = #333
 theme-colour-text-code = #000
 theme-colour-bg-dark = #323232
+theme-colour-primary = #ff431f
+theme-colour-secondary = #4f26be
 
 // base styles
 
@@ -23,10 +25,10 @@ h1, h2, h3
 h4, h5, h6
   margin-top: 3rem
 a
-  color: theme-colour-text
+  color: theme-colour-primary
   text-decoration: none
   &:hover
-    color: darken(theme-colour-text, 20%)
+    color: darken(theme-colour-secondary, 20%)
     text-decoration: none
 ul, ol
   li
@@ -55,7 +57,7 @@ div.header
     &.title
       font-weight: 400
       font-size: 1.6rem
-      color: #ff431f
+      color: theme-colour-primary
 
 div.content
   background: #fafafa
