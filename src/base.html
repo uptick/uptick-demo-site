@@ -3,6 +3,8 @@
   <head>
     <title>{{ site.package_name }}</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link rel="icon" href="{{ site.baseurl }}/static/favicon.png" type="image/png">
+    <link rel="icon" href="{{ site.baseurl }}/static/favicon.svg" type="image/svg+xml">
     {% include head.html %}
   </head>
   <body>
@@ -27,7 +29,7 @@
         <a href="http://www.uptickhq.com/" style="float: right;">
           <img
             style="max-height: 40px;"
-            src="https://www.datocms-assets.com/103955/1700884339-logo-orange.png?auto=format&w=3027"
+            src="{{ site.baseurl }}/static/uptick-logo-orange.avif"
           />
         </a>
         <p>Published under the MIT License</p>
