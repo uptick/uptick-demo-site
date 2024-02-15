@@ -50,7 +50,7 @@ exports.config = {
   target: ['esnext'],
   entryPoints: [
     { out: 'index', in: './src/index.ts' },
-    { out: 'main', in: './src/main.styl' },
+    { out: 'index', in: './src/index.styl' },
   ],
   outdir: 'dist',
   external,
