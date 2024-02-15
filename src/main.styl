@@ -33,13 +33,18 @@ ul, ol
   li
     margin: 0.5rem 0
 code
+  display: inline-block
+  vertical-align: middle
+  background: #eee
+  padding: 0.25rem
+  font-size: 1rem
+  color: theme-colour-text-code
+code.block
+  display: block
+  overflow-y: auto
   max-height: 25vh
   white-space: pre
-  display: block
-  background: #eee
   padding: 1rem
-  overflow-y: auto
-  color: theme-colour-text-code
 
 // layout
 
@@ -63,9 +68,8 @@ div.content
   padding: 4rem 1rem
 
 a.source-link
-  display: block
+  display: inline-block
   color: theme-colour-text-code
-  text-align: right
   text-transform: uppercase
   font-size: 0.8rem
   line-height: 1em
